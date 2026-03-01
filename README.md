@@ -30,7 +30,7 @@ Je fais partie de la toute première promotion de la formation, et donc de la pr
     <tr style="border-bottom: 1px solid #eee;">
       <td style="padding: 12px;"><b>Informatique</b></td>
       <td style="padding: 12px;"><b>384</b> heures</td>
-      <td style="padding: 12px;">Algorithmique, Structures de données, Programmation (Python, R, SQL), Interprétation des Langagues, Bases de données </td>
+      <td style="padding: 12px;">Algorithmique, Structures de données, Programmation (Python, R, SQL), Interprétation des Langages, Bases de données </td>
     </tr>
     <tr style="border-bottom: 1px solid #eee;">
       <td style="padding: 12px;"><b>Sciences des données</b></td>
