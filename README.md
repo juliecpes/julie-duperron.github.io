@@ -13,7 +13,7 @@ Je fais partie de la toute première promotion de la formation et la première �
 - Programme de Mathématiques : **[Syllabus détaillé de Mathématiques](./Fichiers/Programme_Mathematiques_L1_L2_L3.pdf)**     
 - Programme d'Informatique: **[Syllabus détaillé d'Informatique](./Fichiers/Programme_Informatique_L1_L2.pdf)**  
 
-<h3>Chiffres clés du cursus</h3>
+<h3>Aperçu du cursus</h3>
 
 <table style="width:100%; border-collapse: collapse; margin-top: 20px;">
   <tbody>
@@ -47,6 +47,11 @@ Je fais partie de la toute première promotion de la formation et la première �
       <td style="padding: 12px;"><b>492</b> heures</td>
       <td style="padding: 12px;">Économie, Sociologie théorique, quantitative et computationnelle, Éthique des Données, Enjeux sociétaux en
 Santé et Biologie</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #eee;">
+      <td style="padding: 12px;"><b>Enseignements transversaux </b></td>
+      <td style="padding: 12px;"><b>492</b> heures</td>
+      <td style="padding: 12px;">Anglais, Ukrainien, Sport</td>
     </tr>
     <tr style="background-color: #fdfdfe; font-weight: bold;">
       <td style="padding: 12px;">Total Cycle</td>
