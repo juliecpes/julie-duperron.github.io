@@ -5,5 +5,5 @@
 
 ##  (Syllabus)
 Pour faciliter l'évaluation de mon dossier, vous trouverez ci-dessous le détail des enseignements suivis :
-* [📄 Télécharger le Syllabus complet du CPES (PDF)](./fichiers/syllabus-cpes.pdf)
-* [🔍 Détail de la Majeure Mathématiques & Info](./majeures.md)
+* [📄 Télécharger le Syllabus complet du CPES (PDF)](./Fichiers/CPES_programme_ECTS.pdf)
+* [🔍 Détail de la Majeure Mathématiques & Info](./Fichiers/CPES_Paris_Saclay.pdf)
