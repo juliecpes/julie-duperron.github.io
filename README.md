@@ -24,22 +24,22 @@ Je fais partie de la toute première promotion de la formation, et donc de la pr
     </tr>
     <tr style="border-bottom: 1px solid #eee;">
       <td style="padding: 12px;"><b>Mathématiques</b></td>
-      <td style="padding: 12px;">**714** heures</td>
+      <td style="padding: 12px;"><b>714</b> heures</td>
       <td style="padding: 12px;">Algèbre, Analyse, Probabilités, Intégration de Lebesgue, Topologie, Optimisation, EDO </td>
     </tr>
     <tr style="border-bottom: 1px solid #eee;">
       <td style="padding: 12px;"><b>Informatique</b></td>
-      <td style="padding: 12px;"> **384** heures</td>
+      <td style="padding: 12px;"><b>384</b> heures</td>
       <td style="padding: 12px;">Algorithmique, Structures de données, Programmation (Python, R, SQL), Interprétation des Langagues, Bases de données </td>
     </tr>
     <tr style="border-bottom: 1px solid #eee;">
       <td style="padding: 12px;"><b>Sciences des données</b></td>
-      <td style="padding: 12px;">**458** heures</td>
+      <td style="padding: 12px;"><b>458</b> heures</td>
       <td style="padding: 12px;">Statistiques descriptives et inférentielles, Modélisation et Apprentissage statistique, Théorie de l'Information </td>
     </tr>
     <tr style="background-color: #fdfdfe; font-weight: bold;">
       <td style="padding: 12px;">Total Cycle</td>
-      <td style="padding: 12px;">**2574** heures</td>
+      <td style="padding: 12px;"><b>2574</b> heures</td>
       <td style="padding: 12px;">Grade de Licence — 180 ECTS</td>
     </tr>
   </tbody>
