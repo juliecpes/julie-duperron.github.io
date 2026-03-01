@@ -10,7 +10,7 @@ Je fais partie de la toute première promotion de la formation, et donc de la pr
 
 - Présentation du CPES : **[Plaquette de présentation du CPES](./Fichiers/CPES_Paris_Saclay.pdf)**    
 - Vue d'ensemble des enseignements de la formation : **[Synthèse des enseignements et crédits ECTS](./Fichiers/CPES_programme_ECTS.pdf)**     
-- Programme de Mathématiques : **[Syllabus détaillé de Mathématiques](./Fichiers/Programme_Mathematiques_L1_L2_L3.pdf)**        
+- Programme de Mathématiques : **[Syllabus détaillé de Mathématiques](./Fichiers/Programme_Mathématiques_L1_L2_L3.pdf)**        
 - Programme d'Informatique: **[Syllabus détaillé d'Informatique](./Fichiers/Programme_Informatique_L1_L2.pdf)**  
 
 <h3>Chiffres clés du cursus</h3>
