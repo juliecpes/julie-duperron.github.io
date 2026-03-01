@@ -1,7 +1,7 @@
 ### Étudiante en L3 CPES Sciences des Données, Société et Santé 
 
 <p align="center">
-  <img src="./fichiers/logos_partenaires.png" alt="Logos Partenaires CPES" width="600">
+  <img src="./Fichiers/logos_partenaires.png" alt="Logos Partenaires CPES" width="600">
 </p>
 
 -- 
