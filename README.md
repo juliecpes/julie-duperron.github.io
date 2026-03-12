@@ -8,7 +8,8 @@ Je fais partie de la toute première promotion de la formation et la première �
 
 <h3>Programme du CPES Sciences des Données, Société et Santé de Paris-Saclay</h3>
 
-- Présentation du CPES : **[Plaquette de présentation du CPES](./Fichiers/CPES_Paris_Saclay.pdf)**    
+- Présentation du CPES : **[Plaquette de présentation du CPES](./Fichiers/CPES_Paris_Saclay.pdf)**
+- Le CPES, par la responsable de formation à Université Paris-Saclay, Christine Paulin :  **[Lettre de la responsable de formation](./Fichiers/lettre_christine_paulin.pdf)** 
 - Vue d'ensemble des enseignements de la formation : **[Synthèse des enseignements et crédits ECTS](./Fichiers/CPES_programme_ECTS.pdf)**     
 - Programme de Mathématiques : **[Syllabus détaillé de Mathématiques](./Fichiers/Programme_Mathematiques_L1_L2_L3.pdf)**     
 - Programme d'Informatique: **[Syllabus détaillé d'Informatique](./Fichiers/Programme_Informatique_L1_L2.pdf)**  
