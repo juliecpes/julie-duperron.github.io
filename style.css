@@ -1,0 +1,560 @@
+
+
+/* --- BARRE DE NAVIGATION STICKY --- */
+
+html {
+    scroll-behavior: smooth;
+    /* Important : évite que le titre de la section ne soit caché sous la barre fixe après le clic */
+    scroll-padding-top: 80px; 
+}
+
+.top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 900; /* Sous la modale (1000) mais au-dessus du reste */
+    background-color: rgba(255, 253, 250, 0.95); /* Ton fond crème légèrement transparent */
+    backdrop-filter: blur(5px); /* Effet de flou moderne */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(168, 112, 140, 0.3); /* Ligne prune pastel très fine */
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #63003C;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
+}
+
+.top-nav a:hover {
+    color: #A8708C; /* Change vers le prune pastel au survol */
+}
+
+/* Configuration de base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #63003C;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #FFFDFA;
+}
+
+/* --- EN-TÊTE DU PROFIL --- */
+/* Le bouton de raccourci tout en haut */
+.scroll-down-btn {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #49284D; /* Ton prune pastel */
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #49284D;
+    padding: 6px 16px;
+    border-radius: 50px; /* Fait un bouton en forme de pilule très arrondie */
+    transition: all 0.3s ease;
+}
+
+.scroll-down-btn:hover {
+    background-color: #A8708C;
+    color: #FCF8ED;
+    transform: translateY(2px); /* Fait descendre le bouton légèrement pour inviter au clic */
+}
+
+/* Le conteneur d'en-tête devient une colonne flexible centrée */
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Force un centrage absolu des blocs enfants */
+    text-align: center;  /* Centre le texte à l'intérieur des blocs */
+    width: 110%;
+    margin-left: -5%;
+    margin-top: 60px;
+}
+/* On garde les règles de base pour la section des ressources */
+.resources-section {
+    text-align: center;
+    width: 110%;
+    margin-left: -5%;
+}
+
+/* 1. Titres et Sous-titres */
+h1.main-title {
+    font-size: 2.8rem;
+    color: #63003C; /* Ton Prune intense pour le nom */
+    margin-bottom: 5px;
+    letter-spacing: -1px; /* Resserre un peu les lettres pour un effet moderne */
+}
+
+h2.subtitle {
+    font-size: 1.2rem;
+    color: #A8708C; /* Le Prune pastel/transparent qu'on a calculé */
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* 2. Texte d'introduction */
+p.intro-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #49284D;
+    max-width: 900px;
+    margin-bottom: 40px; /* Plus besoin des "auto", Flexbox gère le centrage */
+}
+
+/* 3. Titres de section (Ressources, Aperçu...) */
+h3.section-title {
+    font-size: 1.4rem;
+    color: #63003C;
+    border-bottom: 2px solid #A8708C; /* Rappel de la couleur du tableau */
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    display: inline-block; /* Souligne uniquement le texte, pas toute la page */
+}
+
+/* 5. Logos des Écoles */
+.school-logos {
+    display: flex;
+    justify-content: center; /* Centre les logos horizontalement */
+    align-items: center;     /* Aligne les logos sur la même ligne médiane */
+    gap: 40px;               /* Espace entre les logos */
+    margin-bottom: 25px;     /* Espace entre les logos et ton nom */
+}
+
+.logo-img {
+    height: 65px;          /* HAUTEUR FIXE : la clé pour que tous les logos fassent la même taille */
+    width: auto;           /* Laisse la largeur s'adapter naturellement pour ne pas déformer le logo */
+    object-fit: contain;   /* Sécurité supplémentaire anti-déformation */
+    
+    /* Optionnel : un petit effet élégant (gris au repos, couleur au survol) */
+    filter: opacity(100%);
+    transition: all 0.3s ease;
+}
+
+.logo-img:hover {
+    filter: grayscale(0%) opacity(100%);
+}
+
+/* --- CITATION DE LA RESPONSABLE --- */
+.quote-section {
+    max-width: 900px;
+    margin: 0 auto 50px auto; /* Centre la section avec de l'espace en bas */
+}
+
+.director-quote {
+    background-color: white;
+    border-left: 5px solid #A8708C; /* Ta couleur prune pastel */
+    margin: 0;
+    padding: 30px 40px;
+    border-radius: 0 12px 12px 0; /* Arrondit les coins sauf celui de la bordure */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03); /* Ombre très douce */
+    text-align: left; /* On force le texte à gauche pour faciliter la lecture */
+}
+
+.director-quote p {
+    font-size: 1.1rem;
+    font-style: italic; /* L'italique est la convention pour une voix rapportée */
+    color: #49284D;
+    line-height: 1.7;
+    margin-top: 0;
+}
+
+.director-quote cite {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #63003C; /* Prune foncé pour le nom de la responsable */
+    text-align: right; /* Signature alignée à droite */
+}
+
+/* 4. Les Boutons de Ressources (Adieu les liens bleus !) */
+.resources-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne proprement */
+    gap: 15px;       /* Espace aéré entre les boutons */
+    margin-bottom: 50px;
+}
+
+.resource-btn {
+    background-color: white;
+    color: #49284D; /* Prune doux pour le texte */
+    text-decoration: none; /* Enlève le soulignement horrible */
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #49284D; /* La bordure bleue froide de ton tableau */
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    transition: all 0.2s ease; /* Prépare l'animation de survol */
+}
+
+/* Effet interactif quand la souris passe dessus */
+.resource-btn:hover {
+    background-color: #A8708C; /* Le fond devient bleu */
+    color: #1E2B4D; /* Le texte devient bleu très foncé */
+    transform: translateY(-2px); /* Le bouton se soulève légèrement */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* Le Tableau Moderne */
+.cursus-table {
+    width: 110%;
+    margin-left: -5%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    margin-top: 0px;
+}
+
+.cursus-table th {
+    padding: 10px 20px;
+    color: #A8708C;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.cursus-table tr {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* Cellules : Alignement parfait et bordures des cartes */
+.cursus-table td {
+    padding: 12px 15px;
+    vertical-align: middle; /* Force l'alignement vertical parfait entre toutes les colonnes */
+    border-top: 1px solid #edf2f7; /* Dessine le haut de la carte */
+    border-bottom: 1px solid #edf2f7; /* Dessine le bas de la carte (la ligne disparue) */
+}
+
+/* Bordure gauche (la barre colorée) */
+.cursus-table td:first-child {
+    border-left: 5px solid #63003C;
+    border-radius: 8px 0 0 8px;
+    font-weight: bold;
+    color: #63003C;
+}
+
+/* Bordure droite et conteneur des badges */
+.cursus-table td:last-child {
+    border-right: 1px solid #edf2f7;
+    border-radius: 0 8px 8px 0;
+    line-height: 1.8; /* Laisse respirer les badges s'ils passent à la ligne (remplace le Flexbox) */
+}
+
+.cursus-table th:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.cursus-table th:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+/* --- STYLE COMMUN DES BADGES --- */
+
+/* --- 1. STYLE COMMUN À TOUS LES BADGES (Lien ou Statique) --- */
+[class^="badge-"] {
+    display: inline-block;
+    padding: 6px 14px;
+    margin: 3px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* --- 2. STYLE UNIQUEMENT POUR LES BADGES CLIQUABLES (Balise <a>) --- */
+a[class^="badge-"] {
+    text-decoration: underline; /* Souligné par défaut */
+    text-underline-offset: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Survol UNIQUEMENT pour les liens */
+a[class^="badge-"]:hover {
+    transform: scale(1.08);
+    filter: brightness(95%);
+    text-decoration-thickness: 2px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- 3. STYLE POUR LES BADGES NON-CLIQUABLES (Balise <span>) --- */
+span[class^="badge-"] {
+    text-decoration: none;
+    cursor: default; /* Curseur normal, pas de petite main */
+}
+
+/* --- COULEURS SPÉCIFIQUES --- */
+
+.badge-maths { 
+    background: #e1f5fe; color: #01579b; border: 1px solid #b3e5fc; 
+}
+.badge-info { 
+    background: #ede7f6; color: #311b92; border: 1px solid #d1c4e9; 
+}
+.badge-data { 
+    background: #e0f2f1; color: #004d40; border: 1px solid #b2dfdb; 
+}
+.badge-projet { 
+    background: #e8f5e9; color: #1b5e20; border: 1px solid #c8e6c9; 
+}
+.badge-app { 
+    background: #cffafe; color: #164e63; border: 1px solid #a5f3fc; 
+}
+.badge-transversal { 
+    background: #e9ecef; color: #495057; border: 1px solid #dee2e6; 
+}
+
+/* --- FENÊTRE MODALE --- */
+
+/* Le fond d'écran assombri qui prend toute la page */
+.modal-overlay {
+    position: fixed; /* Reste fixe même si on scrolle */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(74, 67, 63, 0.8); /* Un gris-brun transparent très chic */
+    backdrop-filter: blur(3px); /* Floute légèrement ton tableau en arrière-plan */
+    z-index: 1000; /* S'assure d'être au-dessus de TOUT le reste */
+    
+    /* Flexbox pour centrer la boîte parfaitement au milieu de l'écran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* La boîte blanche centrale */
+.modal-box {
+    background-color: #FCF8ED; /* Ton fond crème */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    max-width: 600px;
+    text-align: center;
+    border: 2px solid #A8708C; /* Ta bordure prune pastel */
+}
+
+/* Le petit titre dans la boîte */
+.modal-title {
+    color: #63003C;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+/* Réajustement du bouton spécifique à la modale */
+#close-btn {
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    
+    /* On annule les styles de "carte de document" pour ce bouton précis */
+    width: auto;              /* Il reprend sa largeur naturelle */
+    display: inline-block;    /* On quitte le mode Flexbox pour le recentrer via le parent */
+    border-left: 1px solid #dee2e6 ; /* On lui redonne une bordure uniforme et fine */
+    padding: 10px 30px;
+}
+
+/* Alignement horizontal du titre et du bouton */
+.title-with-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 110%;
+    margin-left: -5%;
+    margin-bottom: 10px; /* Espace entre ce bloc et le tableau */
+    margin-top: 40px;    /* Espace après la citation du dessus */
+}
+
+/* On désactive les marges et transformations précédentes pour ce cas précis */
+.title-with-button h3.section-title {
+    margin-left: 0;
+    transform: none;
+    margin-bottom: 0;
+}
+
+.title-with-button .scroll-down-btn {
+    margin-bottom: 0;
+    padding: 5px 12px;
+    font-size: 0.75rem;
+    transform: translateY(8px)
+}
+
+/* --- CARTES DE RESSOURCES MINIMALISTES --- */
+
+.resources-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px auto 60px auto;
+    max-width: 1100px;
+}
+
+.resource-btn {
+    display: flex;
+    align-items: center;
+    width: 280px;
+    padding: 12px 18px;
+    background-color: white;
+    color: #49284D;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px solid #E0E0E0;
+    border-left: 4px solid #A8708C; /* Rappel de la bordure de la citation */
+    border-radius: 4px; /* Moins arrondi pour plus de sérieux */
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+/* Le petit badge "PDF" */
+.file-type {
+    font-size: 0.65rem;
+    font-weight: 800;
+    background-color: #F4F0F2;
+    color: #A8708C;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-right: 12px;
+    border: 1px solid #A8708C;
+    letter-spacing: 0.5px;
+}
+
+.resource-btn:hover {
+    background-color: #FCF8ED; /* Ton fond de page */
+    border-color: #63003C;
+    border-left-width: 8px; /* L'accent s'épaissit au survol */
+    transform: translateX(5px); /* Glissement discret vers la droite */
+    box-shadow: 0 4px 12px rgba(99, 0, 60, 0.1);
+}
+
+.resource-btn:hover .file-type {
+    background-color: #63003C;
+    color: white;
+    border-color: #63003C;
+}
+
+/* --- MISE EN VALEUR ACADÉMIQUE --- */
+
+.focus-academic {
+    margin-top: 20px;
+    background-color: #F9F6F1; /* Le fond crème légèrement plus sombre */
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px dashed #A8708C; /* Bordure en pointillés prune */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* La carte académique prioritaire */
+.academic-card {
+    width: 320px !important; /* Elle est plus large que les autres */
+    border-left: 6px solid #63003C !important; /* Barre latérale plus épaisse */
+    background-color: white;
+}
+
+/* --- SECTION RECOMMANDATIONS --- */
+/* --- AJUSTEMENTS RECOMMANDATIONS --- */
+
+.rec-sub-title {
+    color: #A8708C;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 40px 0 20px 0;
+    font-weight: 700;
+}
+
+.recommendation-grid {
+    display: grid;
+    /* Force la création de 2 colonnes de largeur identique (1fr chacune) */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; /* Augmentation de l'espace pour une meilleure respiration */
+    width: 100%;
+    margin: 0 auto 40px auto;
+}
+
+/* Optionnel : Pour que ce soit joli sur téléphone, on repasse à 1 colonne */
+@media (max-width: 768px) {
+    .recommendation-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.rec-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
+    border: 1px solid #eee;
+    /* Empêche la carte de déborder de son espace de grille */
+    box-sizing: border-box; 
+}
+
+/* Couleurs de bordure pour différencier les deux pôles */
+.acad-border { border-top: 5px solid #63003C; } /* Prune foncé pour les profs */
+.pro-border { border-top: 5px solid #A8708C; }  /* Prune clair pour les stages */
+.recommendations-section {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.rec-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(99, 0, 60, 0.1);
+}
+
+.rec-author {
+    display: block;
+    font-weight: 700;
+    color: #63003C;
+    font-size: 1.1rem;
+}
+
+.rec-title {
+    display: block;
+    font-size: 0.85rem;
+    color: #A8708C;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.rec-summary {
+    font-size: 0.95rem;
+    color: #49284D;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    min-height: 60px; /* Aligne les boutons si les textes sont de tailles différentes */
+}
+
+.rec-link {
+    display: inline-block;
+    color: #63003C;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.rec-link:hover {
+    border-bottom-color: #A8708C;
+    padding-left: 5px;
+}
